@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>G.Sheet Api</title>
-</head>
-<body>
-	<a href="{{ url_for('index') }}">Home</a>
-	<a href="{{ url_for('all') }}">Show All</a>
+{% extends 'base.html' %}
+
+{% block content %}
 	<h1>Hello Google Sheet Api!</h1>
-</body>
-</html>
+{% endblock content %}
+
