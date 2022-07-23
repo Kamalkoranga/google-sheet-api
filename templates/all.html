@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All</title>
+</head>
+<body>
+	<!-- <p>{{ lst }}</p> -->
+	<h1>All Enginnering Colleges:-</h1>
+	{% for i in lst %}
+		{% if i['college'] %}
+			<h3>{{ i['college'] }}</h3>
+			<h4>Other details:</h4>
+			<ul>
+				<li>{{ i['city'] }}</li>
+				<li>{{ i['state'] }}</li>
+			</ul>
+			<hr>
+		{% else %}
+			<p>Empty</p>
+		{% endif %}
+	{% endfor %}
+</body>
+</html>
